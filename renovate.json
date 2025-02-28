@@ -1,0 +1,21 @@
+{
+    "customManagers": [
+      {
+        "customType": "regex",
+        "fileMatch": ["plugins.sh"],
+        "matchStrings": [
+          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: versioning=(?<versioning>[a-z-]+?))?\\sdownload_hangar (?<packageName>.+?) (?<currentValue>.+?)\\s"
+        ],
+        "versioningTemplate": "semver-coerced",
+        "datasourceTemplate": "custom.hangar"
+      }
+    ],
+    "customDatasources": {
+      "hangar": {
+        "defaultRegistryUrlTemplate": "https://hangar.papermc.io/api/v1/projects/{{packageName}}/versions",
+        "transformTemplates": [
+          "{\"releases\": result.{\"version\": \"v\" & name}}"
+        ]
+      }
+    }
+  }
