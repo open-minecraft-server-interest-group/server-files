@@ -1,1 +1,0 @@
-docker run renovate/renovate

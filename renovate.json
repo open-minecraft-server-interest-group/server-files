@@ -1,13 +1,35 @@
 {
     "customManagers": [
       {
+        "description": "Hangar custom manager",
         "customType": "regex",
         "fileMatch": ["plugins.sh"],
         "matchStrings": [
-          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: versioning=(?<versioning>[a-z-]+?))?\\sdownload_hangar (?<packageName>.+?) (?<currentValue>.+?)\\s"
+          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: versioning=(?<versioning>[a-z-]+?))?\\s+download_hangar (?<packageName>.+?) (?<currentValue>.+?)\\s"
         ],
         "versioningTemplate": "semver-coerced",
         "datasourceTemplate": "custom.hangar"
+      },
+      {
+        "description": "GitHub releases custom manager",
+        "customType": "regex",
+        "fileMatch": ["plugins.sh"],
+        "matchStrings": [
+          "download_github_release (?<packageName>.+?) (?<currentValue>.+?) (?:.+?)\\s"
+        ],
+        "versioningTemplate": "semver-coerced",
+        "datasourceTemplate": "github-releases"
+      },
+      {
+        "description": "LuckPerms releases custom manager",
+        "customType": "regex",
+        "fileMatch": ["plugins.sh"],
+        "matchStrings": [
+          "download_luckperms (?<currentValue>.+?)\\s"
+        ],
+        "packageNameTemplate": "luckperms",
+        "versioningTemplate": "regex:https:\\\/\\\/download\\.luckperms\\.net\\\/(?<build>\\d+)\\\/bukkit\\\/loader\\\/LuckPerms-Bukkit-(?<major>\\d+)\\.(?<minor>\\d+).(?<patch>\\d+).jar",
+        "datasourceTemplate": "custom.luckperms"
       }
     ],
     "customDatasources": {
@@ -15,6 +37,12 @@
         "defaultRegistryUrlTemplate": "https://hangar.papermc.io/api/v1/projects/{{packageName}}/versions",
         "transformTemplates": [
           "{\"releases\": result.{\"version\": \"v\" & name}}"
+        ]
+      },
+      "luckperms": {
+        "defaultRegistryUrlTemplate": "https://metadata.luckperms.net/data/downloads",
+        "transformTemplates": [
+          "{\"releases\": [{\"version\": $$.downloads.bukkit}]}"
         ]
       }
     }
