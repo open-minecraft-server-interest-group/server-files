@@ -1,0 +1,6 @@
+name: v_steward
+permissions:
+- weight.100
+suffixes:
+- ? <hover:show_text:'<color:#ede515><bold>Steward</bold></color><newline>The Steward enforces democratic processes, oversees the admins and holds ownership of various platforms, but otherwise stays out of day-to-day operations.'><color:#ede515>🛡</color></hover>
+  : priority: 100

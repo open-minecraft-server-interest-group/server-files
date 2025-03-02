@@ -1,0 +1,6 @@
+name: v_administrator
+permissions:
+- weight.90
+suffixes:
+- ? <hover:show_text:'<color:#f02e05><bold>Administrator</bold></color><newline>The Administrators manage the server'><color:#f02e05>🛠</color></hover>
+  : priority: 90

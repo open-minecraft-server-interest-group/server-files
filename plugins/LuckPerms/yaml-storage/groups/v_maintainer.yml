@@ -1,0 +1,6 @@
+name: v_maintainer
+permissions:
+- weight.70
+suffixes:
+- ? <hover:show_text:'<color:#de4713><bold>Maintainer</bold></color><newline><lang:sgffa.badge.helpful.desc>'><color:#de4713>⭐</color></hover>
+  : priority: 70

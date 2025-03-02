@@ -1,0 +1,65 @@
+# No repository meta files
+README.md
+LICENSE
+renovate.json
+
+# No docker stuff
+Dockerfile
+.dockerignore
+
+### The rest is copied from .gitignore
+
+## General configuration
+
+# No world files
+world/
+world_nether/
+world_the_end/
+
+# No server player files
+banned-ips.json
+banned-players.json
+ops.json
+usercache.json
+version_history.json
+whitelist.json
+
+# No eula
+eula.txt
+
+# No libraries
+**/libs/**
+**/libraries/**
+
+# No caches
+**/cache/**
+
+# No logs
+**/logs/**
+
+# No console history
+.console_history
+
+# No jar files
+*.jar
+
+# No local databases
+*.db
+
+# No remapped plugins
+plugins/.paper-remapped/
+
+## Specific configuration
+
+# CarbonChat
+plugins/CarbonChat/users/profile_cache.json
+
+# LuckPerms
+plugins/LuckPerms/contexts.json
+plugins/LuckPerms/translations
+
+# LibertyBans
+plugins/LibertyBans/internal/
+
+# spark
+plugins/spark/tmp-client/

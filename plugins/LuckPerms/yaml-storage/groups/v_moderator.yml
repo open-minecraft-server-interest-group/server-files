@@ -1,0 +1,6 @@
+name: v_moderator
+permissions:
+- weight.80
+suffixes:
+- ? <hover:show_text:'<color:#da05f0><bold>Moderator</bold></color><newline><lang:sgffa.badge.mod.desc>'><color:#da05f0>🗡</color></hover>
+  : priority: 80

@@ -1,0 +1,7 @@
+name: v_staffprofile
+prefixes:
+- '<red>':
+    priority: 1
+suffixes:
+- ? <hover:show_text:'<color:red><bold><lang:sgffa.badge.staffprofile.title></bold></color><newline><lang:sgffa.badge.staffprofile.desc>'><color:red><bold>!</bold></color></hover>
+  : priority: 1

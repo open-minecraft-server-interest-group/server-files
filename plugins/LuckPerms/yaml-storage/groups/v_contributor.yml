@@ -1,0 +1,6 @@
+name: v_contributor
+permissions:
+- weight.60
+suffixes:
+- ? <hover:show_text:'<color:#f08205><bold>Contributor</bold></color><newline><lang:sgffa.badge.champion.desc>'><color:#f08205>⭐</color></hover>
+  : priority: 60
