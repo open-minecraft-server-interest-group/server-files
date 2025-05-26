@@ -8,7 +8,7 @@ download() {
     # Plugins should go into the plugins directory
     mkdir -p ./plugins && cd ./plugins
     # download_hangar deathchest 2.2.7
-    download_github_release EssentialsX/Essentials 2.20.1 EssentialsX-{{ver}}
+    download_github_release EssentialsX/Essentials 2.21.1 EssentialsX-{{ver}}
     download_luckperms 5.4.156 1573
 }
 
