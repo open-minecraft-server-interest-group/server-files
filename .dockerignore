@@ -1,5 +1,5 @@
 # No repository meta files
-README.md
+*.md
 LICENSE
 renovate.json
 
