@@ -1,7 +1,6 @@
 # server-files
 
-## Testing the renovate configuration locally
+This repository contains the server configuration files for the Minecraft server created by the Open Minecraft Server Interest Group.
 
-```bash
-docker run --rm -v ./:/repo -w /repo -e LOG_LEVEL=debug -e GITHUB_COM_TOKEN=<TOKEN> renovate/renovate:latest --platform=local
-```
+If you're interested in contributing, please check the [CONTRIBUTING.md](./CONTRIBUTING.md) documentation file.
+You can chat with the community by joining our [Discord guild](https://discord.gg/Y7jShMBTh6).
