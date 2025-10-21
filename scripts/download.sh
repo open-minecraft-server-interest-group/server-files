@@ -2,7 +2,7 @@
 
 download() {
     echo "Downloading paper jar"
-    download_paper 1.21.4 187
+    download_paper 1.21.4 232
 
     echo "Downloading plugins"
     # Plugins should go into the plugins directory
