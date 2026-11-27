@@ -9,7 +9,7 @@ download() {
     mkdir -p ./plugins && cd ./plugins
     # download_hangar deathchest 2.2.7
     download_github_release EssentialsX/Essentials 2.21.2 EssentialsX-{{ver}}
-    download_luckperms 5.5.10 1595
+    download_luckperms 5.5.93 1680
 }
 
 download_hangar() {
